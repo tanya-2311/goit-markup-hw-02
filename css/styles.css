@@ -1,0 +1,36 @@
+/* палітра кольлорів */
+/* --color-brand { color: #2196F3; }*/
+/* color-main: { color: #757575;}
+     */
+/* color h: {color:#212121} */
+/* color-white-text: color: #FFFFFF; */
+/* backrground-main : #F5F5F5;*/
+
+/* backrground-secondary : 2F303A#;  */
+
+/* logo-color: #000000; */
+/* color-adress: #FFFFFF */
+/* color-info: color: rgba(255, 255, 255, 0.6); */
+:root {
+    --brand-color: #2196F3;
+    --main-text-color: #757575;
+    --primary-text-coror: #212121;
+    --secondary-text-coror: #FFFFFF;
+    --logo-text-color: #000000;
+    --color-info: rgba(255, 255, 255, 0.6);
+    --backrground-main: #F5F5F5;
+    --backrground-secondary: #2F303A
+}
+
+body {
+    background-color: var(--backrground-main);
+    color: var(--main-text-color)
+}
+
+ul {
+    list-style: none;
+}
+
+/* HEADER */
+/* LOGO */
+.logo .site-nav .link {}
