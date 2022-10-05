@@ -17,6 +17,8 @@
     --primary-text-color: #212121;
     --secondary-text-color: #FFFFFF;
     --logo-text-color: #000000;
+    --button-text-focus: #188CE8;
+
     --color-info: rgba(255, 255, 255, 0.6);
     --backrground-main: #F5F5F5;
     --backrground-secondary: #2F303A
@@ -27,10 +29,10 @@ body {
     color: var(--main-text-color)
 }
 
-h2,
+/* h2,
 h3 {
-    color: var(--primary-text-color);
-}
+    color: var(--primary-text-color); */
+
 
 ul {
     list-style: none;
@@ -79,8 +81,42 @@ ul {
     cursor: pointer;
 }
 
+.button:hover {
+    color: var(--secondary-text-color);
+    background-color: var(--button-text-focus);
+}
+
+.button:focus {
+    color: var(--secondary-text-color);
+    background-color: var(--button-text-focus);
+}
+
 /* section-features */
 .section-features .title {
     color: var(--primary-text-color);
 
+}
+
+/* section-servise */
+.service-title {
+    color: var(--primary-text-color)
+}
+
+/* <!--section Наша команда--> */
+.comand-title {
+    color: var(--primary-text-color);
+}
+
+.name-title {
+    color: var(--primary-text-color);
+}
+
+/* footer */
+.footer {
+    background-color: var(--backrground-secondary);
+}
+
+.title-adress {
+    text-decoration: none;
+    color: var(--secondary-text-color);
 }
