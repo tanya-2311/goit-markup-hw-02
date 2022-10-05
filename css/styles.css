@@ -21,12 +21,14 @@
 
     --color-info: rgba(255, 255, 255, 0.6);
     --backrground-main: #F5F5F5;
-    --backrground-secondary: #2F303A
+    --backrground-secondary: #2F303A;
+    --backrground-firsty: #F5F4FA;
+
 }
 
 body {
     background-color: var(--backrground-main);
-    color: var(--main-text-color)
+    color: var(--main-text-color);
 }
 
 /* h2,
@@ -39,6 +41,10 @@ ul {
 }
 
 /* HEADER */
+.header {
+    background-color: var(--secondary-text-color);
+}
+
 /* LOGO */
 .logo {
     color: var(--brand-color);
@@ -81,15 +87,13 @@ ul {
     cursor: pointer;
 }
 
-.button:hover {
+.button:hover,
+:focus {
     color: var(--secondary-text-color);
     background-color: var(--button-text-focus);
 }
 
-.button:focus {
-    color: var(--secondary-text-color);
-    background-color: var(--button-text-focus);
-}
+
 
 /* section-features */
 .section-features .title {
@@ -103,6 +107,10 @@ ul {
 }
 
 /* <!--section Наша команда--> */
+.comand {
+    background-color: var(--backrground-firsty);
+}
+
 .comand-title {
     color: var(--primary-text-color);
 }
@@ -119,4 +127,32 @@ ul {
 .title-adress {
     text-decoration: none;
     color: var(--secondary-text-color);
+}
+
+/*  PORTFOLIO */
+/* main hero- */
+.main-portfolio {
+    background-color: var(--backrground-main);
+}
+
+/* button-filtr */
+.button-filtr {
+    background-color: var(--backrground-firsty);
+    columns: var(--primary-text-color);
+    cursor: pointer;
+}
+
+.button-filtr:hover {
+    color: var(--secondary-text-color);
+    background-color: var(--brand-color);
+}
+
+.button-filtr:focus {
+    color: var(--secondary-text-color);
+    background-color: var(--brand-color);
+}
+
+/* portfolio-title */
+.portfolio-title {
+    color: var(--primary-text-color);
 }
