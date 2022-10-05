@@ -14,8 +14,8 @@
 :root {
     --brand-color: #2196F3;
     --main-text-color: #757575;
-    --primary-text-coror: #212121;
-    --secondary-text-coror: #FFFFFF;
+    --primary-text-color: #212121;
+    --secondary-text-color: #FFFFFF;
     --logo-text-color: #000000;
     --color-info: rgba(255, 255, 255, 0.6);
     --backrground-main: #F5F5F5;
@@ -27,10 +27,60 @@ body {
     color: var(--main-text-color)
 }
 
+h2,
+h3 {
+    color: var(--primary-text-color);
+}
+
 ul {
     list-style: none;
 }
 
 /* HEADER */
 /* LOGO */
-.logo .site-nav .link {}
+.logo {
+    color: var(--brand-color);
+    text-decoration: none;
+}
+
+.logo-studio {
+    color: var(--logo-text-color);
+}
+
+.site-nav .link {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--brand-color);
+}
+
+.title-contact {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+.title-contact:hover,
+.title-contact:focus {
+    color: var(--brand-color);
+}
+
+/* section-hero */
+.hero {
+    background-color: var(--backrground-secondary);
+    color: var(--backrground-main);
+}
+
+.button {
+    background-color: var(--brand-color);
+    color: var(--secondary-text-color);
+    cursor: pointer;
+}
+
+/* section-features */
+.section-features .title {
+    color: var(--primary-text-color);
+
+}
