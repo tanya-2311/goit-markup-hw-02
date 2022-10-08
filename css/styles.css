@@ -20,9 +20,8 @@
     --button-text-focus: #188CE8;
 
     --color-info: rgba(255, 255, 255, 0.6);
-    --backrground-main: #F5F5F5;
+    /* --backrground-main: #F5F5F5; */
     --backrground-secondary: #2F303A;
-    --backrground-firsty: #F5F4FA;
     --primery-font: Roboto, san-serif;
     --secondary-font: Raleway, san-serif;
 
@@ -30,13 +29,13 @@
 }
 
 body {
-    background-color: var(--backrground-main);
+    background-color: var(--secondary-text-color);
     color: var(--main-text-color);
     font-family: var(--primery-font);
-    font-style: normal;
+    /* font-style: normal;
     font-weight: 400;
+    line-height: 1.71; */
     font-size: 14px;
-    line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
@@ -80,6 +79,9 @@ ul {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    font-style: normal;
+
+
 }
 
 .site-nav .link.current,
@@ -105,11 +107,11 @@ ul {
 /* section-hero */
 .hero {
     background-color: var(--backrground-secondary);
-    color: var(--backrground-main);
+    color: var(--secondary-text-color);
 }
 
 .hero-title {
-
+    font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -150,7 +152,7 @@ ul {
     border: 0;
     padding: 0;
 
-    white-space: nowrap;
+    white-space: normal;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
@@ -161,8 +163,16 @@ ul {
 
 }
 
+.features-title {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+}
+
 .title {
+    font-style: normal;
     font-weight: 700;
+    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
@@ -170,6 +180,7 @@ ul {
 /* section-servise */
 .service-title,
 .comand-title {
+    font-style: normal;
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -180,7 +191,7 @@ ul {
 
 /* <!--section Наша команда--> */
 .comand {
-    background-color: var(--backrground-firsty);
+    background-color: var(--secondary-text-color);
 }
 
 .comand-title {
@@ -188,6 +199,7 @@ ul {
 }
 
 .name-title {
+    font-style: normal;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -196,6 +208,7 @@ ul {
 }
 
 .position-title {
+    font-style: normal;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -211,18 +224,25 @@ ul {
     color: var(--secondary-text-color);
     line-height: 1.71;
     font-style: normal;
+    font-weight: 400;
+}
+
+.title-contact {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
 }
 
 /*  PORTFOLIO */
 /* main hero- */
-.main-portfolio {
-    background-color: var(--backrground-main);
-}
+/* .main-portfolio {
+    /* background-color: var(--backrground-main); */
+/* } */
 
 /* button-filtr */
 .button-filtr {
-    background-color: var(--backrground-firsty);
-    columns: var(--primary-text-color);
+    background-color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     cursor: pointer;
     font-family: var(--primery-font);
     font-style: normal;
@@ -233,7 +253,11 @@ ul {
     letter-spacing: 0.03em;
 }
 
-.button-filtr:hover,
+.button-filtr:hover {
+    color: var(--secondary-text-color);
+    background-color: var(--brand-color);
+}
+
 .button-filtr:focus {
     color: var(--secondary-text-color);
     background-color: var(--brand-color);
@@ -243,6 +267,7 @@ ul {
 /* portfolio-title */
 .portfolio-title {
     color: var(--primary-text-color);
+    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
@@ -251,6 +276,8 @@ ul {
 
 /* title-filtr */
 .title-filtr {
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
 }
