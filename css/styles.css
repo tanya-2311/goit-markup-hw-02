@@ -122,7 +122,7 @@ ul {
 
 }
 
-.button {
+.button-main {
     background-color: var(--brand-color);
     color: var(--secondary-text-color);
     cursor: pointer;
@@ -137,8 +137,8 @@ ul {
 
 }
 
-.button:hover,
-:focus {
+.button-main:hover,
+.button-main:focus {
     color: var(--secondary-text-color);
     background-color: var(--button-text-focus);
 }
